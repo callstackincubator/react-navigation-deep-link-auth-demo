@@ -7,6 +7,9 @@ import { createURL } from 'expo-linking';
 import { Home, Profile, SignIn, useAuth } from './screens';
 
 const RootStack = createNativeStackNavigator({
+  // Setting this option to 'lastUnhandled' will let React Navigation remember unhandled actions
+  // So if a deep link was not handled due to missing auth, it will be retried after auth
+  UNSTABLE_routeNamesChangeBehavior: 'lastUnhandled',
   groups: {
     authenticated: {
       if: () => useAuth((state) => state.authenticated),
