@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "auth-deep-link-demo",
+    "slug": "auth-deep-link-demo",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "scheme": "authdeeplinkdemo",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.authdeeplinkdemo"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.authdeeplinkdemo"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
